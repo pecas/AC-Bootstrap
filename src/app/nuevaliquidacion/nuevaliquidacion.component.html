@@ -8,27 +8,60 @@
         </div>
       </div>
       <div class="panel-body">
-        <form class="form-horizontal" #formcliente="ngForm" (ngSubmit)="onSubmit()">
+        <form class="form-horizontal">
           <div class="form-group">
-            <label for="nombre" class="col-lg-2 control-label">Nombre</label>
+            <label for="fecha" class="col-lg-2 control-label">Fecha</label>
             <div class="col-lg-5">
-              <input type="text" class="form-control" id="nombre" placeholder="Nombre" #nombre="ngForm" ngControl="nombre" [(ngModel)]="cliente.nombre" >
+              <input type="date" class="form-control" id="fecha" placeholder="Fecha">
             </div>
           </div>
           <div class="form-group">
-            <label for="apellido" class="col-lg-2 control-label">Apellido</label>
+            <label for="cotizacion" class="col-lg-2 control-label">Cotización</label>
             <div class="col-lg-5">
-              <input type="text" class="form-control" id="apellido" placeholder="Apellido" #apellido="ngForm" ngControl="apellido" [(ngModel)]="cliente.apellido">
+              <input type="text" class="form-control" id="cotizacion" placeholder="Cotización">
             </div>
           </div>
           <div class="form-group">
-            <label for="edad" class="col-lg-2 control-label">Edad</label>
+            <label for="arrendatario" class="col-lg-2 control-label">Arrendatario</label>
             <div class="col-lg-5">
-              <input type="text" class="form-control" id="edad" placeholder="Edad" #edad="ngForm" ngControl="edad" [(ngModel)]="cliente.edad">
+              <input type="text" class="form-control" id="arrendatario" placeholder="Arrendatario">
             </div>
           </div>
-                  
-          
+          <div class="form-group">
+            <label for="propiedad" class="col-lg-2 control-label">Propiedad</label>
+            <div class="col-lg-5">
+              <input type="text" class="form-control" id="propiedad" placeholder="Propiedad">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-2 control-label">Tipo</label>
+            <div class="col-lg-10">
+              <div class="radio">
+                <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                Casa
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                Apartamento
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fechadesde" class="col-lg-2 control-label">Fecha desde</label>
+            <div class="col-lg-5">
+              <input type="date" class="form-control" id="fechadesde" placeholder="Fecha desde">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fechahasta" class="col-lg-2 control-label">Fecha hasta</label>
+            <div class="col-lg-5">
+              <input type="date" class="form-control" id="fechahasta" placeholder="Fecha hasta">
+            </div>
+          </div>
           <div class="form-group">
             <div class="col-lg-10 col-lg-offset-2">
               <button type="reset" class="btn btn-default">Cancelar</button>
